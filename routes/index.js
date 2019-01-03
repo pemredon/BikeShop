@@ -22,11 +22,11 @@ router.get('/', function(req, res, next) {
 /* POST shop page. */
 router.post('/shop', function(req, res, next) {
   // Here we just want to check what can we get in our backend when the POST request is sent front the front end index.ejs
-  console.log("Detection of the complete GET request:", req.body)
-  console.log("Detection of the key 'bikeName' in our GET request:", req.body.bikeNameFromFront)
-  console.log("Detection of the key 'bikePrice' in our GET request:", req.body.bikePriceFromFront)
-  console.log("Detection of the key 'bikeImage' in our GET request:", req.body.bikeImageFromFront)
-  console.log("Detection of the key 'bikeQuantity' in our GET request:", req.body.bikeQuantityFromFront)
+  console.log("Detection of the complete POST request:", req.body)
+  console.log("Detection of the key 'bikeName' in our POST request:", req.body.bikeNameFromFront)
+  console.log("Detection of the key 'bikePrice' in our POST request:", req.body.bikePriceFromFront)
+  console.log("Detection of the key 'bikeImage' in our POST request:", req.body.bikeImageFromFront)
+  console.log("Detection of the key 'bikeQuantity' in our POST request:", req.body.bikeQuantityFromFront)
 
   // Now that we can handle the requested data from the front, we can push a new object in our dataCardBike array (we need to use the same keys as in our dataBike array)
   dataCardBike.push(
